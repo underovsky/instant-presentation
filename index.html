@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+	<!-- 
+		Instant Presentation 
+		https://github.com/underovsky/instant-presentation
+		The MIT License (MIT)
+		Copyright (c) 2015 Krzysztof Rusnarczyk
+	 -->
+
+	<title>Instant Presentation</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+	<script>
+		var Config = {
+			SLIDE_NUM: true, // display slide numbers
+			SLIDE_NUM_TIME: 3000, // time to display slide number (ms)
+			LS_CS: 'CURRENT_POSITION', // name for localStorage key with current position
+			BOUNCE_RATE: 30 // percentage of bounce on swipe gesture
+		};
+	</script>
+	<script src="assets/js/hammer.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="slides">
+			<div class="section-title">
+				<div>
+					<h1>
+						Instant Presentation
+					</h1>
+					<h2>
+						Showcase
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Content tags
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Content tags
+				</h4>
+				<h3>
+					Basic text tags
+				</h3>
+				<p>
+					This is a paragraph with <a href="http://underovsky.com">a link</a>.
+				</p>
+				<p>
+					This is <strong>strong</strong> text.
+				</p>
+				<p>
+					This is <em>emphasized</em> text.
+				</p>
+				<p>
+					<small>
+						This is small text.
+					</small>
+				</p>
+				<p>
+					This is an <q>inline quote</q>.
+				</p>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Content tags
+				</h4>
+				<h3>
+					Alignment
+				</h3>
+				<p class="text-left">
+					Aligned to the left.
+				</p>
+				<p class="text-center">
+					Centered.
+				</p>
+				<p class="text-right">
+					Aligned to the right.
+				</p>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Content tags
+				</h4>
+				<h3>
+					Lists
+				</h3>
+				<p>
+					Unordered list:
+				</p>
+				<ul>
+					<li>item one,</li>
+					<li>item two,</li>
+					<li>item three.</li>
+				</ul>
+				<p>
+					Ordered list:
+				</p>
+				<ol>
+					<li>Item one.</li>
+					<li>Item two.</li>
+					<li>Item three.</li>
+				</ol>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Content tags
+				</h4>
+				<h3>
+					Code
+				</h3>
+				<p>
+					Inline code:
+				</p>
+				<p>
+					<code>git checkout -b dev</code>
+				</p>
+				<p>
+					Block code:
+				</p>
+<pre>
+Function.prototype.method = function(name, func) {
+	this.prototype[name] = func;
+	return this;
+};
+</pre>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Content tags
+				</h4>
+				<h3>
+					Other
+				</h3>
+				<h5>
+					This is h5 headline
+				</h5>
+				<h6>
+					This is h6 headline
+				</h6>
+				<p>
+					An hr line:
+				</p>
+				<hr>
+				<p>
+					And blockquote:
+				</p>
+				<blockquote>
+					I would rather be without a state than without a voice.
+					<cite>Edward Snowden</cite>
+				</blockquote>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Grid system
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Grid system
+				</h4>
+				<h3>
+					Basics
+				</h3>
+				<p>
+					Grid system in total has 4 columns. You can use <code>col-1</code>, <code>col-2</code>, <code>col-3</code> and <code>col-4</code>, but
+					the sum cannot exceed 4. Always insert <code>col-*</code> inside <code>row</code>. You can also use <code>col-offset-*</code>.
+				</p>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Grid system
+				</h4>
+				<h3>
+					Examples
+				</h3>
+				<div class="row">
+					<div class="col-1">
+						<p>
+							I'm <code>col-1</code>.
+						</p>
+					</div>
+					<div class="col-3">
+						<p>
+							I'm <code>col-3</code>.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Grid system
+				</h4>
+				<h3>
+					Examples
+				</h3>
+				<div class="row">
+					<div class="col-2">
+						<p>
+							I'm <code>col-2</code>.
+						</p>
+					</div>
+					<div class="col-1">
+						<p>
+							I'm <code>col-1</code>.
+						</p>
+					</div>
+					<div class="col-1">
+						<p>
+							I'm <code>col-1</code>.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Grid system
+				</h4>
+				<h3>
+					Examples
+				</h3>
+				<div class="row">
+					<div class="col-2 col-offset-1">
+						<p>
+							I'm <code>col-2</code> with <code>col-offset-1</code>.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Images
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Images
+				</h4>
+				<h3>
+					Basics
+				</h3>
+				<p>
+					Image cannot exceed 100% of its parent (then <code>max-width</code> is applied). You can insert images in 3 ways:
+				</p>
+				<ol>
+					<li>Just image.</li>
+					<li>Inside text (floated).</li>
+					<li>Inside grid system.</li>
+				</ol>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Images
+				</h4>
+				<h3>
+					Just image
+				</h3>
+				<img src="assets/img/example.jpg" alt="">
+			</div>
+			
+			<div class="section">
+				<h4>
+					Images
+				</h4>
+				<h3>
+					Inside text
+				</h3>
+				<p>
+					Use class <code>float-left</code> or <code>float-right</code>.
+				</p>
+				<p class="clearfix">
+					<img src="assets/img/example.jpg" alt="" width="300" class="float-left">
+					Hi, I'm a text with floated image.
+				</p>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Images
+				</h4>
+				<h3>
+					Inside grid system
+				</h3>
+				<div class="row">
+					<div class="col-2 col-offset-1">
+						<img src="assets/img/example.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Videos
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Videos
+				</h4>
+				<h3>
+					Basics
+				</h3>
+				<p>
+					You can also insert videos in your presentation. Remember about right format to support your browser. You can apply same rules
+					for videos as for images.
+				</p>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Videos
+				</h4>
+				<h3>
+					Example
+				</h3>
+				<video controls width="800">
+					<source src="http://mazwai.com/system/posts/videos/000/000/186/original/390214194.mp4" type="video/mp4">
+				</video>
+				<p>
+					Video by <a href="http://vk.com/videos11860398">Maria Boyarina</a> under <a href="http://creativecommons.org/licenses/by/3.0/us/">CC BY 3.0</a> license. 
+				</p>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Slide types
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Slide types
+				</h4>
+				<h3>
+					Basics
+				</h3>
+				<p>
+					You've already seen title, section and standard slide. There is also a special slide that you can use to insert
+					important information, joke, question or just to break the flow a bit.`
+				</p>
+			</div>
+			
+			<div class="section-promo">
+				<div>
+					<h2>
+						Hello, I'm the special slide...
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section-promo">
+				<div>
+					<h2>
+						<i>...also in italics...</i>
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section-promo">
+				<div>
+					<h2>
+						<b>...or bold.</b>
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section-start">
+				<div>
+					<h2>
+						Config
+					</h2>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h4>
+					Config
+				</h4>
+				<h3>
+					Basics
+				</h3>
+				<p>
+					There is <code>Config</code> variable inside <code>index.html</code> file. You can edit it to set up some global settings for presentation.
+				</p>
+			</div>
+			
+			<div class="section-promo">
+				<div>
+					<h2>
+						That's all. Thanks!
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="stages">
+		</div>
+		<div id="progress">
+		</div>
+	</footer>
+</body>
+</html>
