@@ -12,6 +12,9 @@ You need at least basic web skills to use this presentation. Just clone and star
 ## Browser support
 Instant Presentation works in all most recent (or decent) browsers.
 
+## Additional libraries
+This project uses [Hammer.js](https://github.com/hammerjs/hammer.js) for touch gestures.
+
 ## About the author
 * [underovsky.com](http://underovsky.com)
 * [twitter.com/underovsky](https://twitter.com/underovsky)
