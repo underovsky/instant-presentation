@@ -7,7 +7,7 @@ Feel free to use it, modify, edit and tweak however you want.
 You can see presentation live example [here](http://underovsky.com/showcase/instant-presentation).
 
 ## How-to
-You need at least basic web skills to use this presentation. Just clone and start working with it. For a quick tutorial read [this article](http://underovsky.com/article/21).
+You need at least basic web skills to use this presentation. Just clone and start working with it. For a quick tutorial read [this article](http://underovsky.com/article/21/en).
 
 ## Browser support
 Instant Presentation works in all most recent (or decent) browsers.
